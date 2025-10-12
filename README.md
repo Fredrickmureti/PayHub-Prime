@@ -3,7 +3,6 @@
 ### Developer-First Payment Integration API for African Markets
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Built with Lovable](https://img.shields.io/badge/Built%20with-Lovable-ff69b4)](https://lovable.dev)
 [![Supabase](https://img.shields.io/badge/Backend-Supabase-3ECF8E)](https://supabase.com)
 
 ---
