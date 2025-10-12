@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Fintech Primary - Deep Blue */
+    --primary: 215 85% 25%;
+    --primary-foreground: 210 40% 98%;
+    --primary-hover: 215 85% 20%;
+    
+    /* Fintech Accent - Teal/Cyan */
+    --secondary: 180 70% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 180 70% 40%;
+
+    --muted: 210 30% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 180 65% 92%;
+    --accent-foreground: 180 70% 25%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 145 65% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 35 90% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 92%;
+    --ring: 215 85% 25%;
+
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 85% 25%) 0%, hsl(215 85% 35%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(180 70% 45%) 0%, hsl(180 70% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 25%) 0%, hsl(180 70% 45%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(215 25% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(215 25% 15% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(215 25% 15% / 0.1);
+    --shadow-card: 0 2px 8px hsl(215 25% 15% / 0.08);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 30% 8%;
+    --foreground: 210 30% 95%;
+
+    --card: 215 28% 12%;
+    --card-foreground: 210 30% 95%;
+
+    --popover: 215 28% 12%;
+    --popover-foreground: 210 30% 95%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 215 85% 25%;
+    --primary-hover: 210 35% 92%;
+
+    --secondary: 180 70% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 180 70% 45%;
+
+    --muted: 215 25% 18%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 180 40% 20%;
+    --accent-foreground: 180 70% 50%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 145 65% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 35 90% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 215 25% 20%;
+    --input: 215 25% 18%;
+    --ring: 180 70% 50%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(215 85% 25%) 0%, hsl(215 85% 35%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(180 70% 45%) 0%, hsl(180 70% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 30%) 0%, hsl(180 70% 45%) 100%);
+    
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.5);
+    --shadow-card: 0 2px 8px hsl(0 0% 0% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+  }
+}
