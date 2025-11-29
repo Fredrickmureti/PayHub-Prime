@@ -258,12 +258,6 @@ Contributions are welcome! Here's how you can help:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 📞 Contact & Support
 
 **Developer:** Fredrick Mureti
@@ -274,42 +268,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Connect:**
 - [LinkedIn](https://linkedin.com/in/fredrick-mureti)
 - [GitHub](https://github.com/fredrickmureti)
+- [Website](https://mureti.dev)
 
----
 
-## 🌟 Show Your Support
 
-If you find PayHub Prime useful, please:
-- ⭐ Star this repository
-- 🐛 Report bugs or request features via [Issues](https://github.com/yourusername/payhub-prime/issues)
-- 📢 Share with other developers who need payment integration solutions
-- 🤝 Contribute to the codebase
-
----
-
-## 🚀 Roadmap
-
-- [ ] Add support for more African payment providers (MTN Mobile Money, Vodacom M-Pesa, etc.)
-- [ ] Mobile SDKs (React Native, Flutter)
-- [ ] GraphQL API endpoint
-- [ ] Advanced analytics and reporting
-- [ ] Multi-currency conversion support
-- [ ] Recurring payments and subscriptions
-- [ ] Payment links and invoicing
-
----
-
-## 🙏 Acknowledgments
-
-Built with:
-- [Lovable](https://lovable.dev) - AI-powered development platform
-- [Supabase](https://supabase.com) - Open-source Firebase alternative
-- [shadcn/ui](https://ui.shadcn.com) - Beautiful component library
-- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
-
----
-
-**Made with ❤️ for developers integrating payments in Africa**
 
 ---
 
